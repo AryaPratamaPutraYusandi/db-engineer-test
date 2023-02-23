@@ -19,3 +19,17 @@ metode yang di gunakan adalah ER diagram
 5. Apakah temen-temen pernah melakukan configurasi database? seperti Cluster, High Available, Fail-Over or Single cluster jika pernah sebetukan dan menggunakan teknology apa?
 
 belum pernah, pernah namun mengetahui teori basisnya
+
+
+kemudian bagaimana untuk melakukan tuningnya jika nanti pada request query harus memenuhi 1000 tps (Transactions per Second) untuk query yang compleks
+
+untuk melakukan tunning pada database untuk menghandle 1000 tps dapat melakukan beberapa hal seperti
+
+1. Query Optimization
+query yang tidak efecient dapat mengakibatkan kelambatan dalam melakukan request, seperti JOIN atau EXIST
+2. Data Defragmentation
+jika menggukan outdated legacy system akan sering membuat query berkerja lambat untuk menangkap data
+3. Increase Memory
+meng upgrade memory dapat mempercepat performance database
+4.Improve Indexes
+Indeks berfungsi sebagai sistem manajemen pengarsipan database. Ketika database diindeks dengan benar, bisnis dapat mengalami peningkatan efisiensi untuk pengambilan data karena file tidak terlalu sulit untuk ditemukan.
